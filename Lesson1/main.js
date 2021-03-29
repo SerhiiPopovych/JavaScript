@@ -106,25 +106,25 @@
 // 5 < 6 -> true
 // 5 > 6 -> false
 // 5 >= 6 -> false
-// 5 ? 6 -> false
-// 10 = 10 -> true
-// 10 ? 10 -> true
-// 10 ? 10 -> false
-// 10 ? 10 -> false
-// 10 ? 10 -> false
-// 123 = '123' -> false
-// 123 ? '123' -> true
+// 5 === 6 -> false
+// 10 == 10 -> true
+// 10 === 10 -> true
+// 10 != 10 -> false
+// 10 > 10 -> false
+// 10 < 10 -> false
+// 123 === '123' -> false
+// 123 == '123' -> true
 
 // zavdannja 14
-// console.log(132 > 100 && 45 < 12 );
-// console.log(34 > 33 && 23 < 90 );
-// console.log(99 > 100 && 45 > 12 );
-// console.log(132 > 100 || 45 < 12 );
-// console.log(111 > 11 || 45 < 111 );
-// console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) );
-// console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) );
-// console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) );
-// console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 ));
+// console.log(132 > 100 && 45 < 12 ); // false
+// console.log(34 > 33 && 23 < 90 );  //true
+// console.log(99 > 100 && 45 > 12 );  //false
+// console.log(132 > 100 || 45 < 12 ); //true
+// console.log(111 > 11 || 45 < 111 ); //true
+// console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) ); //true
+// console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) ); //true
+// console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) ); //false
+// console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 )); //true
 // console.log(!!'-1');
 // console.log(!!-1);
 // console.log(!!'0');
@@ -199,9 +199,9 @@
 // let str = '20';
 // let a = 5;
 // document.write(str + a + "<br/>") //205
-// document.write(str - a + "<br/>") //Nan??? непоняв чого 15  а не нан
-// document.write(str * '2' + "<br/>") //Nan???
-// document.write(str / 2 + "<br/>") //Nan???
+// document.write(str - a + "<br/>") //15
+// document.write(str * '2' + "<br/>") //40
+// document.write(str / 2 + "<br/>") //10
 
 // Class 11
 // parseInt("3.14") //3
@@ -225,3 +225,5 @@
 // let str2 = prompt('Surname');
 // let str3 = prompt('age');
 // alert(`Доброго вечера ${str1} ${str2},  мои поздравления что вам ${str3}`)
+
+
