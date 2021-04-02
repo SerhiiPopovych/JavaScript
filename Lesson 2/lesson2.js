@@ -109,6 +109,7 @@
 
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 
+
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
@@ -131,9 +132,11 @@
 //     }
 //     console.log(arr);
 // - Дан масив [1, 2, 3]. Зробіть з нього новий масив [3, 2, 1].
-//     let arr = ['1', '2', '3'];
-//     let arrReverse = arr.reverse()
-//     console.log(arrReverse);
+            let arr = ['1', '2', '3'];
+            for (let i = arr.length - 1; i >= 0; i--) {
+            const arrayElement = arr[i];
+                console.log(arrayElement);
+            }
 //
 // - Дан масив [1, 2, 3]. Додайте йому в кінець елементи 4, 5, 6.
 //     let arr = [1, 2, 3];
